@@ -1,2 +1,12 @@
 
-print("hola mundo")
+#Actividad 2, secuencia fibonacci
+def fibonacci(n):
+    fib = [0,1]
+    for i in range(2, n):
+        fib.append(fib[i-1]+ fib[i-2])
+
+    return fib
+
+fibonacci_sequence = fibonacci(10)
+for num in fibonacci_sequence:
+    print(num)

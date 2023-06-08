@@ -1,4 +1,39 @@
+#ejercicio 1 numeros primos
+import math
+num = 0
 
+while True:
+    print("1) Número Primo")
+    print("2) Factorial")
+    print("3) Palíndrome")
+    print("4) Salir")
+    seleccion = int(input("Seleccione su opcion: "));
+
+    if seleccion == 4:
+        break
+
+
+    elif seleccion == 1:
+        numero= int(input("Selecciona un numero entre 1 y 15: "))
+        if numero>=1 and numero<=15:
+            
+                valor= range(2,numero)
+                contador = 0
+                for n in valor:
+                    if numero % n == 0:
+                     contador +=1
+                    print("divisor:", n)
+                
+                if contador > 0 :
+                    print("El número no es primo" )
+                else:
+                    print("El nÚmero es primo")
+        else:
+            print("Error, seleccione un numero entre 1 y 15.")
+    
+    print("--"*30)
+           
+           
 #Actividad 2, secuencia fibonacci
 def fibonacci(n):
     fib = [0,1]
